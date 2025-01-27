@@ -12,9 +12,9 @@ class KafkaProducer:
     def __init__(self, host: str, port: int, user: str, password: str, topic: str, cert_path: str) -> None:
         params = {
             'bootstrap.servers': f'{host}:{port}',
-            'security.protocol': 'SASL_SSL',
+            'security.protocol': 'Скрыл по просьбе Яндекс Практикума',
             'ssl.ca.location': cert_path,
-            'sasl.mechanism': 'SCRAM-SHA-512',
+            'sasl.mechanism': 'Скрыл по просьбе Яндекс Практикума',
             'sasl.username': user,
             'sasl.password': password,
             'error_cb': error_callback,
@@ -40,9 +40,9 @@ class KafkaConsumer:
                  ) -> None:
         params = {
             'bootstrap.servers': f'{host}:{port}',
-            'security.protocol': 'SASL_SSL',
+            'security.protocol': 'Скрыл по просьбе Яндекс Практикума',
             'ssl.ca.location': cert_path,
-            'sasl.mechanism': 'SCRAM-SHA-512',
+            'sasl.mechanism': 'Скрыл по просьбе Яндекс Практикума',
             'sasl.username': user,
             'sasl.password': password,
             'group.id': group,  # '',
